@@ -15,3 +15,24 @@
   stroke-linecap: round;
   pointer-events: none;
 }
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.infoTable {
+  border: solid 2px black;
+  margin-bottom: 30px;
+}
+#imgIcons, #imgGit {
+  width: 50px;
+  height: 50px;
+}
+footer {
+  background-color: black;
+  color: white;
+}
+li {
+  list-style-type: none;
+}
