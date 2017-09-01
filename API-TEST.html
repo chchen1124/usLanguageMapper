@@ -19,19 +19,42 @@
 // var queryGET = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exchars=1000&titles="+currentLanguage+"Spanish_language";
 //https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch= 
 //https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exchars=1000&titles=Spanish_language
+//https://en.wikipedia.org/w/api.php?action=opensearch&search=french_language&format=json&origin=*
+//https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exchars=1000&titles=Spanish_language&origin=*
 
 console.log("hi");
 $.ajax({
     url: queryGET,
     type: "GET"
 }).done(function(response) {
+  console.log(response);
   console.log(response[3][0]);
-  $(".container").append(response[2]);
+  $(".container").append(capitalize_Words(response[1][0]));
+  $(".container").append("<br/>"+response[2]);
   $(".container").append("<br/><a href=\""+response[3][0]+"\">"+response[3][0]+"</a>");
   // console.log(JSON.parse(response.query));
 });
+
+function capitalize_Words(str)
+{
+ return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
   </script>
 <!-- End of Working Code for Wikipedia API Calls & Output -->
+
+<!-- Census API Work -->
+  <script type="text/javascript">
+  var queryGET = "https://api.census.gov/data/2013/language?get=EST,LANLABEL,NAME&for=state:6&LAN=625";
+
+$.ajax({
+    url: queryGET,
+    type: "GET"
+}).done(function(response) {
+  console.log("The amount of people that speak Spanish in California is: "+response[1][0]);
+});
+  </script>
+<!-- End of Census Code -->
+
 
 </body>
 
