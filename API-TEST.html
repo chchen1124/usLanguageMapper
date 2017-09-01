@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>API TEST HTML</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h2>API TEST HTML</h2>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+<!-- Working Code for Wikipedia API Calls & Output -->
+  <script type="text/javascript">
+  var queryGET = "https://en.wikipedia.org/w/api.php?action=opensearch&search=french_language&format=json&origin=*";
+// var queryGET = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exchars=1000&titles="+currentLanguage+"Spanish_language";
+//https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch= 
+//https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exchars=1000&titles=Spanish_language
+
+console.log("hi");
+$.ajax({
+    url: queryGET,
+    type: "GET"
+}).done(function(response) {
+  console.log(response[3][0]);
+  $(".container").append(response[2]);
+  $(".container").append("<br/><a href=\""+response[3][0]+"\">"+response[3][0]+"</a>");
+  // console.log(JSON.parse(response.query));
+});
+  </script>
+<!-- End of Working Code for Wikipedia API Calls & Output -->
+
+</body>
+
+</html>
