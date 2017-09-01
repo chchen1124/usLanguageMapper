@@ -1,79 +1,67 @@
 <!DOCTYPE html>
-
 <html lang="en-us">
 
-  <head>
-
+<head>
     <meta charset="UTF-8">
     <title>Map</title>
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <!-- Moment.js Reference -->
     <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
 
-  </head>
-
-  <body>
-
+<body>
     <!-- Employee Tracker -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">  
-    <!-- Jumbotron -->
-      <div class="jumbotron" style="background-color: black; color: white">
-        <h1 class="text-center">Dynamic Language Map</h1>
-        <h3 class="text-center">A Comprehensive Directory of Languages Spoken in Each State</h3>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row">
-      <div class="col-md-2">      
-        <ul class="nav nav-pills nav-stacked">
-          <li role="presentation" class="active"><a href="#">Languages</a></li>
-            <li role="presentation"><a href="#">SPANISH AND SPANISH CREOLE</a></li>
-            <li role="presentation"><a href="#">French (incl. Patois, Cajun)</a></li>
-            <li role="presentation"><a href="#">French Creole</a></li>
-            <li role="presentation"><a href="#">Italian</a></li>
-            <li role="presentation"><a href="#">Portuguese (incl. Portuguese Creole)</a></li>
-            <li role="presentation"><a href="#">German (incl. Luxembourgian)</a></li>
-            <li role="presentation"><a href="#">Yiddish</a></li>
-            <li role="presentation"><a href="#">Other West Germanic languages</a></li>
-            <li role="presentation"><a href="#">Scandinavian languages</a></li>
-            <li role="presentation"><a href="#">Greek</a></li>
-            <li role="presentation"><a href="#">Russian</a></li>
-            <li role="presentation"><a href="#">Polish</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-6">  
-        <div class="map"><svg width="960" height="600"></svg></div>
-      </div>
-  </div>
-
-  <div class="row">
-      <div class="col-md-12">  
-        <div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Jumbotron -->
+                <div class="jumbotron" style="background-color: black; color: white">
+                    <h1 class="text-center">Dynamic Language Map</h1>
+                    <h3 class="text-center">A Comprehensive Directory of Languages Spoken in Each State</h3>
+                </div>
+            </div>
         </div>
-      </div>
-  </div> 
-</div>   
-
-
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://d3js.org/topojson.v2.min.js"></script>
-
-<script src="assets/javascript/script.js"></script>
-    
-
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active"><a href="#">Languages</a></li>
+                    <li role="presentation"><a href="#">SPANISH AND SPANISH CREOLE</a></li>
+                    <li role="presentation"><a href="#">French (incl. Patois, Cajun)</a></li>
+                    <li role="presentation"><a href="#">French Creole</a></li>
+                    <li role="presentation"><a href="#">Italian</a></li>
+                    <li role="presentation"><a href="#">Portuguese (incl. Portuguese Creole)</a></li>
+                    <li role="presentation"><a href="#">German (incl. Luxembourgian)</a></li>
+                    <li role="presentation"><a href="#">Yiddish</a></li>
+                    <li role="presentation"><a href="#">Other West Germanic languages</a></li>
+                    <li role="presentation"><a href="#">Scandinavian languages</a></li>
+                    <li role="presentation"><a href="#">Greek</a></li>
+                    <li role="presentation"><a href="#">Russian</a></li>
+                    <li role="presentation"><a href="#">Polish</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="map">
+                    <svg width="960" height="600"></svg>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
