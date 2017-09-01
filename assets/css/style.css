@@ -7,8 +7,6 @@
   fill: red;
 }
 
-
-
 .state-borders {
   fill: none;
   stroke: #fff;
@@ -29,12 +27,12 @@
   
 }
 #imgIcons {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 4px;
 }
 #imgGit {
-margin: 10px;
+margin: 5px;
 width: 30px;
 
 }
@@ -46,6 +44,16 @@ footer {
 li {
   list-style-type: none;
 }
+
+#wikiTitle {
+  font-weight: bold;
+  text-align: center;
+}
+
+.dropdown-toggle {
+  font-size: 1.3em;
+}
+
 
 @media screen and (max-width: 991px) {
     .jumbotron .h1, .jumbotron h1 {
@@ -63,7 +71,7 @@ li {
     font-size: 30px;
   }
   .h3, h3 {
-    font-size: 20px;
+    display: none;
   }
 }
 ul {
