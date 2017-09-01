@@ -7,6 +7,8 @@
   fill: red;
 }
 
+
+
 .state-borders {
   fill: none;
   stroke: #fff;
@@ -24,15 +26,46 @@
 .infoTable {
   border: solid 2px black;
   margin-bottom: 30px;
+  
 }
-#imgIcons, #imgGit {
+#imgIcons {
   width: 50px;
   height: 50px;
+  border-radius: 4px;
+}
+#imgGit {
+margin: 10px;
+width: 30px;
+
 }
 footer {
   background-color: black;
   color: white;
+  border-radius: 6px;
 }
 li {
   list-style-type: none;
+}
+
+@media screen and (max-width: 991px) {
+    .jumbotron .h1, .jumbotron h1 {
+    font-size: 45px;
+  }
+  .h3, h3 {
+    font-size: 25px;
+  }  
+  .jumbotron {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 467px) {
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 30px;
+  }
+  .h3, h3 {
+    font-size: 20px;
+  }
+}
+ul {
+  margin-left: 0;
 }
