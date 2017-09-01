@@ -15,3 +15,65 @@
   stroke-linecap: round;
   pointer-events: none;
 }
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.infoTable {
+  border: solid 2px black;
+  margin-bottom: 30px;
+  
+}
+#imgIcons {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+#imgGit {
+margin: 5px;
+width: 30px;
+
+}
+footer {
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+}
+li {
+  list-style-type: none;
+}
+
+#wikiTitle {
+  font-weight: bold;
+  text-align: center;
+}
+
+.dropdown-toggle {
+  font-size: 1.3em;
+}
+
+
+@media screen and (max-width: 991px) {
+    .jumbotron .h1, .jumbotron h1 {
+    font-size: 45px;
+  }
+  .h3, h3 {
+    font-size: 25px;
+  }  
+  .jumbotron {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 467px) {
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 30px;
+  }
+  .h3, h3 {
+    display: none;
+  }
+}
+ul {
+  margin-left: 0;
+}
