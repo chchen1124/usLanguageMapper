@@ -53,6 +53,14 @@ li {
 .dropdown-toggle {
   font-size: 1.3em;
 }
+.termsService {
+  background-color: lightgray;
+  font-size: small;
+}
+
+.footer-copyright {
+  text-align: center;
+}
 
 
 @media screen and (max-width: 991px) {
@@ -66,7 +74,8 @@ li {
     padding-top: 10px;
   }
 }
-@media screen and (max-width: 467px) {
+
+@media screen and (max-width: 565px) {
   .jumbotron .h1, .jumbotron h1 {
     font-size: 30px;
   }
